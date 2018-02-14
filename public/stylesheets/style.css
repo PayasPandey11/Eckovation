@@ -1,0 +1,70 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav{
+  position: absolute;
+  top:0vh;
+  background: linear-gradient(to right, #7F00FF , #E100FF);
+  width:100%;
+  height: auto;
+  color:white;
+  font-size: 25px;
+}
+.nav p{
+  display: inline;
+  padding-left: 2vw;
+  position: relative;
+  float: left;
+}
+
+#men{
+  position: relative;
+  float: left;
+
+}
+#women{
+  position: relative;
+  float: left;
+}
+
+
+#cart{
+  position: absolute;
+  top:2vh;
+  right: 15vw;
+}
+#men:hover .mencategory{
+  display: block;
+
+}
+#women:hover .womencategory{
+  display: block;
+}
+.mencategory{
+  display: none;
+  position: relative;
+  top:0vh;
+  left: 1vw;
+
+
+}
+.womencategory{
+  display: none;
+  position: relative;
+  top:0vh;
+  left: 1vw;
+
+}
+#logout {
+  position: absolute;
+  top:2vh;
+  right: 5vw;
+}

@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(src='/javascripts/layout.js')
+  body
+    block content
+
+    div.nav
+      div#men
+        p Men
+        a.mencategory#shirts(href="/catalog/men/shirts") Men Shirts
+        a.mencategory#jeans(href="/catalog/men/jeans")  Men Jeans
+      div#women
+        p Women
+        a.womencategory#shirts(href="/catalog/women/shirts") Women Shirts
+        a.womencategory#jeans(href="/catalog/women/jeans")  Women Jeans
+
+      a#logout(href='/logout') Logout
+      a#cart(href="../../cart") Cart

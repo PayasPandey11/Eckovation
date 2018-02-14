@@ -1,0 +1,34 @@
+body{
+  font-weight: 800;
+}
+.items{
+  position: absolute;
+  top:10vw;
+  left: 20vh;
+  display: inline;
+
+}
+.poster{
+  height: 100px;
+  weight:100px;
+}
+.name{
+  position: relative;
+  top:-15vh;
+  left: 10vw;
+}
+.cost{
+  position: relative;
+  left: 10vw;
+  top:-10vh;
+}
+.total-cost{
+  position: absolute;
+  top:15vw;
+  right: 30vh;
+}
+.im-checkout{
+  position: absolute;
+  top:45vh;
+  right:11vw;
+}

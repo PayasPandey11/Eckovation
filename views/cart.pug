@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  link(rel='stylesheet', href='/stylesheets/cart.css')
+
+
+
+  - var itemList = products
+  mixin item-card(item)
+    div.item-card(value=item._id)
+
+      img.poster(src= item.address height="100" width="100")
+      p.name= item.name
+      p.cost Rs #{item.cost}
+
+  div.checkout
+    p.total-cost Order Total #[br] Rs #{total}
+    a(href='https://www.instamojo.com/@payaspandey/l9d0b4d9fc0504d32ba0c3d4772d96ce4/', rel='im-checkout', data-behaviour='remote', data-style='light', data-text='Checkout With Instamojo') Checkout
+    script(src='https://js.instamojo.com/v1/button.js')
+
+  div.items
+    for item in itemList
+
+      +item-card(item)

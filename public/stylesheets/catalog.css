@@ -1,0 +1,38 @@
+.catalog{
+  position: absolute;
+  top:15vh;
+  left: 2vw;
+  width: 100%;
+  display: block;
+  font-weight: 800;
+}
+.item-card{
+  display: inline-flex;
+  width: 40%;
+  height: auto;
+  box-shadow: 0 9px 50px hsla(20, 67%, 75%, 0.31);
+  margin-bottom: 50px;
+  margin-left: 50px;
+  word-wrap: break-word;
+
+}
+.item-poster{
+  margin: 10px;
+}
+.item-name{
+  position: relative;
+  top:12vh;
+  left:0vw;
+  font-size: 20px;
+  width:auto%;
+  height: auto;
+  text-wrap:none;
+}
+.item-cost{
+
+  position: relative;
+  top:25vh;
+  display: block;
+  right: 5vw;
+  font-size: 20px;
+}

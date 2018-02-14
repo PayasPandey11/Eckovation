@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  script(src='/javascripts/product.js')
+  link(rel='stylesheet', href='/stylesheets/catalog.css')
+  - var itemList = data.items
+
+  mixin item-card(item)
+    div.item-card(value=item._id)
+      img.item-poster(src= item.address height="400" width="400")
+      p.item-name= item.name
+      p.item-cost Rs #{item.cost}
+
+
+  div.catalog
+    for item in itemList
+      +item-card(item)
